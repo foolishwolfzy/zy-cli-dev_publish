@@ -1,0 +1,30 @@
+{
+  "name": "@zy-cli-dev/publish",
+  "version": "0.0.0",
+  "description": "zy-cli-dec publish",
+  "author": "zy <15018411119@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@zy-cli-dev/publish.test.js",
+    "build": "npm run serve"
+  },
+  "dependencies": {
+    "@zy-cli-dev/command": "file:../../models/command",
+    "@zy-cli-dev/git": "file:../../models/git",
+    "@zy-cli-dev/log": "file:../../utils/log",
+    "fs-extra": "^11.1.1"
+  }
+}
